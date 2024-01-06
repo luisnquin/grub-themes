@@ -17,7 +17,8 @@
         };
 
         packages = {
-          fallout-gt = pkgs.callPackage ./nix/pkgs/fallout-grub-theme.nix {};
+          steins-gate-gt = pkgs.callPackage ./nix/pkgs/steins-gate.nix {};
+          fallout-gt = pkgs.callPackage ./nix/pkgs/fallout.nix {};
         };
       in rec {
         inherit packages;
