@@ -17,13 +17,13 @@
         };
 
         packages = {
-          steins-gate-gt = pkgs.callPackage ./nix/pkgs/steins-gate.nix {};
-          fallout-gt = pkgs.callPackage ./nix/pkgs/fallout.nix {};
+          steins-gate = pkgs.callPackage ./nix/pkgs/steins-gate.nix {};
+          fallout = pkgs.callPackage ./nix/pkgs/fallout.nix {};
         };
       in rec {
         inherit packages;
 
-        defaultPackage = packages.fallout-gt;
+        defaultPackage = packages.fallout;
       }
     );
 }
